@@ -1,8 +1,9 @@
-package com.OrageHRM.PageObjects;
+package com.OrangeHRM.PageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginpageObject {
@@ -16,12 +17,12 @@ public class LoginpageObject {
 		PageFactory.initElements(rdriver, this);
 	}
 	
-	@FindBy(id = "txtUsername")
-	WebElement username;
+	@FindBy(how=How.XPATH, using ="//input[@id='txtUsername']")
+	WebElement user;
 	
-	public void setusername(String user)
+	public void setusername(String username)
 	{
-		username.sendKeys(user);
+		user.sendKeys(username);
 	}
 	
 	@FindBy(id = "txtPassword")

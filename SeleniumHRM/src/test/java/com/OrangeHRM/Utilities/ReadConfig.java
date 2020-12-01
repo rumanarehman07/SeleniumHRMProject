@@ -27,13 +27,13 @@ public class ReadConfig {
 	
 	public String getUsername()
 	{
-		String username = prop.getProperty("username");
-		return username;
+		String user = prop.getProperty("username");
+		return user;
 	}
 	
 	public String getPassword() {
-		String password = prop.getProperty("password");
-		return password;
+		String passwd = prop.getProperty("password");
+		return passwd;
 	}
 	
 	

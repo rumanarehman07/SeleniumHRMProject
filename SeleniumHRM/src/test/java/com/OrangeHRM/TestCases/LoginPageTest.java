@@ -3,7 +3,7 @@ package com.OrangeHRM.TestCases;
 import org.junit.Assert;
 import org.testng.annotations.Test;
 
-import com.OrageHRM.PageObjects.LoginpageObject;
+import com.OrangeHRM.PageObjects.LoginpageObject;
 
 public class LoginPageTest extends HRMBaseClass {
 
@@ -14,9 +14,9 @@ public class LoginPageTest extends HRMBaseClass {
 public void loginTest1_01() throws Exception
 {
 	
-	loginpage.setusername(username);
+	loginpage.setusername(user);
 	Thread.sleep(3000);
-	loginpage.setPassword(password);
+	loginpage.setPassword(pass);
 	loginpage.clickLogin();
 	Thread.sleep(4000);
 	String TitleDash = driver.getTitle();

@@ -11,23 +11,26 @@ import com.OrangeHRM.Utilities.ReadConfig;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+
+
 public class HRMBaseClass {
 
 	ReadConfig read = new ReadConfig();
 	
 	public String urlHRM = read.getHRMURL();
-	public String username = read.getUsername();
-	public String password = read.getPassword();
-	public WebDriver driver;
+	public String user = read.getUsername();
+	public String pass = read.getPassword();
+	public static WebDriver driver;
 	
 	@BeforeClass
-	public void setUp()
+	public void setUp() throws Exception
 	{
 		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get(urlHRM);
+		Thread.sleep(5000);
 	}
 	
 	@AfterClass

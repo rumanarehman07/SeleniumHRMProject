@@ -5,7 +5,8 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -23,6 +24,7 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
@@ -49,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Smoke_Test_suite" class="navigator-link ">
-                    <span>C:\Users\Winterfell\git\SeleniumHRMProject\SeleniumHRM\TestNG.xml</span>
+                    <span>C:\Users\Winterfell\git\SeleniumHRMProject\SeleniumHRM\test-output\TestNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -132,7 +134,7 @@
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
-	at com.OrageHRM.PageObjects.LoginpageObject.setusername(LoginpageObject.java:24)
+	at com.OrangeHRM.PageObjects.LoginpageObject.setusername(LoginpageObject.java:25)
 	at com.OrangeHRM.TestCases.LoginPageTest.loginTest1_01(LoginPageTest.java:17)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
 ... Removed 27 stack frames
@@ -144,7 +146,7 @@
         </div> <!-- panel Smoke_Test_suite -->
         <div panel-name="test-xml-Smoke_Test_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Winterfell\git\SeleniumHRMProject\SeleniumHRM\TestNG.xml</span>
+            <span class="header-content">C:\Users\Winterfell\git\SeleniumHRMProject\SeleniumHRM\test-output\TestNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -197,12 +199,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest1_01')
 data.setCell(0, 2, 'com.OrangeHRM.TestCases.LoginPageTest')
-data.setCell(0, 3, 33);
+data.setCell(0, 3, 32);
 window.suiteTableData['Smoke_Test_suite']= { tableData: data, tableDiv: 'times-div-Smoke_Test_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 ms</span>
+              <span class="suite-total-time">Total running time: 32 ms</span>
               <div id="times-div-Smoke_Test_suite">
               </div> <!-- times-div-Smoke_Test_suite -->
             </div> <!-- times-div -->
@@ -237,15 +239,16 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginTest1_01</span>
-                <span class="method-start">11982 ms</span>
+                <span class="method-start">20313 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">close</span>
-                <span class="method-start">12053 ms</span>
+                <span class="method-start">20392 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>
